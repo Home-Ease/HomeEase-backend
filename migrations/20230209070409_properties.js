@@ -10,7 +10,7 @@ exports.up = function(knex) {
         table.string("city").notNullable;
         table.string("state").notNullable;
         table.integer("zip").notNullable;
-        table.string("price").notNullable
+        table.integer("price").notNullable
     })
 };
 

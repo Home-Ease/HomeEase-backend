@@ -12,6 +12,8 @@ const PORT = process.env.PORT || 8000;
 app.use(cors())
 app.use(express.json())
 
+const propertyRoute = require('./routes/propertyRoute.js');
+app.use('/properties', propertyRoute)
 app.all('*', (req, res)=>{
   res.send('Path does not exist')
 });
