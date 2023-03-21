@@ -14,6 +14,7 @@ app.use(express.json())
 
 const propertyRoute = require('./routes/propertyRoute.js');
 app.use('/properties', propertyRoute)
+app.use('/property',propertyRoute)
 app.all('*', (req, res)=>{
   res.send('Path does not exist')
 });

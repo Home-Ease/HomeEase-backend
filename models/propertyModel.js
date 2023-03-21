@@ -11,8 +11,13 @@ function getPropertiesFromDB(isCity, searchLocation, minValue, maxValue){
     }
 }
 
+function getPropertyFromDB(id){
+    return pool.query('SELECT * FROM properties WHERE id = $1',[id]).then(results => results.rows[0])
+}
+
 
 module.exports = {
-    getPropertiesFromDB
+    getPropertiesFromDB,
+    getPropertyFromDB
 }
 

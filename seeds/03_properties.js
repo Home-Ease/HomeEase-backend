@@ -69,6 +69,22 @@ exports.seed = async function(knex) {
       state: "NY",
       zip: 10031,
       price: 1000000
+    },
+    {
+      houseNumber:71,
+      streetName: 'Teresa Pl',
+      city: 'Hempstead',
+      state:"NY",
+      zip:11550,
+      price:800000
+    },
+    {
+      houseNumber:443,
+      streetName: 'Greene Ave',
+      city: 'Brooklyn',
+      state:"NY",
+      zip:11216,
+      price:800000
     }
   ])
   
